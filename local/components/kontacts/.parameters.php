@@ -43,10 +43,5 @@ $arComponentParameters = [
             'REFRESH'           => 'Y',
             'ADDITIONAL_VALUES' => 'Y',
         ],
-        // настройки кэширования
-        'CACHE_TIME' => [
-            'DEFAULT' => 3600
-        ],
-        'CACHE_TYPE' => 'N',
     ],
 ];

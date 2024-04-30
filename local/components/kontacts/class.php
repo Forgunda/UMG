@@ -41,12 +41,6 @@ class Kontacts extends CBitrixComponent
         } else {
             $arParams['CACHE_TYPE'] = intval($arParams['CACHE_TYPE']);
         }
-        // время кеширования
-        if (!isset($arParams['CACHE_TIME'])) {
-            $arParams['CACHE_TIME'] = 3600;
-        } else {
-            $arParams['CACHE_TIME'] = intval($arParams['CACHE_TIME']);
-        }
         // возвращаем в метод новый массив $arParams
         return $arParams;
     }
