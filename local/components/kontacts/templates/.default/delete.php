@@ -1,5 +1,5 @@
 <?php
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 // класс для работы с языковыми файлами
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\Application;
