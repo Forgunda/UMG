@@ -21,10 +21,13 @@ unset($id);
 <?php
 if($request->isPost()) {
     //Добавление контакта
-    if(isset($request["FIO"])&&$request["phone"]) {
+    if(isset($request["FIO"])&&isset($request["phone"])&&isset($arResult["IBLOCK_ID"])) {
         $id = Kontacts::addKontact($arResult["IBLOCK_ID"], $request["FIO"], $request["phone"], $USER->GetID());
     }
 }
+?>
+<?php
+if(isset($arResult["IBLOCK_ID"])){
 ?>
 <div class="container">
     <form method="post" class="mt-3">
@@ -51,3 +54,8 @@ if($request->isPost()) {
         <button type="submit" class="btn btn-primary">Добавить</button>
     </form>
 </div>
+<?php }else{?>
+    <div class="container">
+        <p class="--bs-danger-text-emphasis text-danger">Выберите инфоблок</p>
+    </div>
+<?php }?>

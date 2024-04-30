@@ -46,5 +46,3 @@ if(isset($arParams["IBLOCK_ID"])) {
         echo '</div>';
     }
 }
-?>
-

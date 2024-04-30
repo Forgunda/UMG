@@ -21,4 +21,3 @@ $arComponentDescription = [
         'NAME' => Loc::GetMessage("S_NAME"),
     ]
 ];
-?>

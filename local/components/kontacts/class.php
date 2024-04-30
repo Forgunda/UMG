@@ -181,4 +181,3 @@ class Kontacts extends CBitrixComponent
         $this->IncludeComponentTemplate();
     }
 }
-?>

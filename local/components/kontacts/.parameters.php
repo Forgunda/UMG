@@ -47,7 +47,6 @@ $arComponentParameters = [
         'CACHE_TIME' => [
             'DEFAULT' => 3600
         ],
-        'CACHE_TYPE' => 'N'
+        'CACHE_TYPE' => 'N',
     ],
 ];
-?>
