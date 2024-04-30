@@ -7,3 +7,4 @@ $MESS["DEL"]        = "Удаление";
 $MESS["PAGE_TITLE"] = "Контакты";
 
 $MESS["IBLOCK_MODULE_NOT_INSTALLED"]="Модуль инфоблоков не установлен";
+?>

@@ -37,24 +37,17 @@ $arComponentParameters = [
         // выбор инфоблока
         'IBLOCK_ID' => [
             'PARENT'            => 'BASE',
-            'NAME'              => Loc::GetMessage("IBLOCK_ID"),
+            'NAME'              => Loc::GetMessage('IBLOCK_ID'),
             'TYPE'              => 'LIST',
             'VALUES'            => $arInfoBlocks,
             'REFRESH'           => 'Y',
-            "DEFAULT"           => '',
-            "ADDITIONAL_VALUES" => "Y",
-        ],
-        //Номер страницы для постраничной навигации
-        "PAGE"=> [
-            "NAME"      => Loc::getMessage("PAGE"),
-            "TYPE"      => "STRING",
-            "PARENT"    => "BASE",
-            "DEFAULT"   => "={\$_REQUEST[\"page\"]}",
+            'ADDITIONAL_VALUES' => 'Y',
         ],
         // настройки кэширования
         'CACHE_TIME' => [
             'DEFAULT' => 3600
         ],
-        "CACHE_TYPE" => "N"
+        'CACHE_TYPE' => 'N'
     ],
 ];
+?>

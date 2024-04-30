@@ -36,6 +36,12 @@ class Kontacts extends CBitrixComponent
     public function onPrepareComponentParams($arParams)
     {
         // время кеширования
+        if (!isset($arParams['CACHE_TYPE'])) {
+            $arParams['CACHE_TYPE'] = 'N';
+        } else {
+            $arParams['CACHE_TYPE'] = intval($arParams['CACHE_TYPE']);
+        }
+        // время кеширования
         if (!isset($arParams['CACHE_TIME'])) {
             $arParams['CACHE_TIME'] = 3600;
         } else {
@@ -175,3 +181,4 @@ class Kontacts extends CBitrixComponent
         $this->IncludeComponentTemplate();
     }
 }
+?>
